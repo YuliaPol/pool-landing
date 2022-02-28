@@ -170,6 +170,8 @@ table {
             line-height: 44px;
             color: #000000;
             text-align: center;
+            max-width: 775px;
+            margin: auto;
             .smile {
                 width: 40px;
                 height: 40px;
@@ -278,6 +280,7 @@ table {
                 font-weight: bold;
                 font-size: 11px;
                 line-height: 13px;
+                transition: background 0.3s ease-in;
                 span {
                     background: -webkit-linear-gradient(0deg, #B27AF8 0%, #7FA1F8 100%);
                     -webkit-background-clip: text;
@@ -298,6 +301,9 @@ table {
             align-items: center;
             justify-content: space-between;
             width: 100%;
+        }
+        .bold {
+            font-weight: bold;
         }
     }
     .ligh-bg {
@@ -678,7 +684,6 @@ table {
             }
             .price-wrap {
                 background: linear-gradient(90deg, #fcf9fe 0%, #f8faff 100%);
-                background: #fff;
                 border-radius: 50px;
                 padding: 40px;
                 min-height: 575px;
@@ -788,6 +793,41 @@ table {
                         }
                     }
                 }
+            }
+        }
+    }
+    .picture-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .picture {
+            padding-bottom: 40px;
+            max-width: 345px;
+            max-width: 90%;
+            img {
+                max-width: 100%;
+            }
+        }
+        .btn-cont {
+            padding-top: 40px;
+        }
+        .small-text {
+            font-family: $fontPage;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            padding-top: 40px;
+        }
+    }
+    .footer {
+        padding: 40px 60px;
+        .logo {
+            max-width: 220px;
+            img {
+                max-width: 100%;
             }
         }
     }
