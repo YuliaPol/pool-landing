@@ -18,5 +18,7 @@ jQuery(function ($) {
         });
         // preloader
         $('.load-wrapper').fadeOut();
+        //animation
+        AOS.init();
     });
 });

@@ -44,6 +44,10 @@ table {
         width: 0px;
     }
 }
+body,
+html {
+    scroll-behavior: smooth;
+}
 .load-wrapper {
     position: fixed;
     top: 0px;
