@@ -247,7 +247,7 @@ html {
                 text-decoration: none;
                 outline: none;
                 &:hover {
-                    animation: gradient 3s ease-in infinite;
+                    animation: gradient 1s ease-in infinite;
                 }
             }
             .btn-border {
@@ -684,6 +684,14 @@ html {
                     &::before {
                         opacity: 1;
                     }
+                    .btn-brd-gradient {
+                        background: $gradient;
+                        span {
+                            background: -webkit-linear-gradient(0deg, #fff 0%, #fff 100%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
                 }
             }
             .price-wrap {
@@ -697,7 +705,6 @@ html {
                 justify-content: space-between;
                 position: relative;
                 z-index: 10;
-               
                 .title {
                     font-family: $fontPage;
                     font-style: normal;
@@ -783,7 +790,7 @@ html {
                         font-size: 14px;
                         line-height: 16px;
                         color: #000000;
-                        padding-bottom: 40px;
+                        padding-bottom: 35px;
                         position: relative;
                         &::before {
                             content: "";
