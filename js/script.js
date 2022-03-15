@@ -20,5 +20,15 @@ jQuery(function ($) {
         $('.load-wrapper').fadeOut();
         //animation
         AOS.init();
+
+        // carousel
+        if ($(window).width() < 992) {
+            $('.price .price-row').owlCarousel({
+                items: 2,
+                loop: true,
+                center: true,
+            });
+        }
+        // price-row
     });
 });
